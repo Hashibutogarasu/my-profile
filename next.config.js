@@ -1,7 +1,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone',
+    output: 'export',
     assetPrefix: process.env.NODE_ENV === "production" ? "/my-profile" : ""
 };
 
