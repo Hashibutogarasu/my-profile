@@ -23,7 +23,7 @@ import MyAvatar from '../../public/icons/Karasu.png';
 import { Card } from '@/components/ui/card';
 import { ModalFooter } from '@nextui-org/react';
 
-export default function Home() {
+export default function Page() {
   return (
     <main className='container space-y-6 py-6 lg:my-10'>
       <div>
