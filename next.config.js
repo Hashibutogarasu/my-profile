@@ -4,7 +4,7 @@ const isProd = process.env.NODE_ENV === 'production';
 const nextConfig = {
     output: 'export',
     assetPrefix: isProd ? "/my-profile" : "",
-    assetPrefix: isProd ? 'https://hashibutogarasu.github.io/my-profile/' : undefined,
+    basePath: isProd ? "/my-profile" : "",
 };
 
 module.exports = nextConfig;
