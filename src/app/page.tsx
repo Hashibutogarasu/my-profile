@@ -35,9 +35,9 @@ export default function Page() {
           </div>
           <div className='grid grid-cols-12 grid-rows-3 gap-5 lg:gap-6'>
             <FadeUpDiv className='col-span-12 row-span-3 space-y-5 md:space-y-7 lg:col-span-4 lg:space-y-8'>
-              <Image
+              <img
                 className='pointer-events-none w-[150px] rounded-full shadow-xl lg:w-[200px]'
-                src={MyAvatar}
+                src='./icons/Karasu.png'
                 alt="Karasu's avatar"
               />
               <section>
@@ -116,7 +116,7 @@ export default function Page() {
               <div className='grid grid-cols-4 gap-3'>
                 <img width={32} height={32} src={`./programLangs/JavaScript.svg`} alt='javascript' />
                 <img width={32} height={32} src={`./programLangs/TypeScript.svg`} alt='typescript' />
-                <img width={32} height={32} style={{ backgroundColor: "white", borderRadius: "5px" }} src='/programLangs/java-icon.svg' alt='java' />
+                <img width={32} height={32} style={{ backgroundColor: "white", borderRadius: "5px" }} src='./programLangs/java-icon.svg' alt='java' />
               </div>
             </LinkCard>
             <FadeUpCard
