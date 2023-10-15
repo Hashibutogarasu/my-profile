@@ -31,11 +31,16 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v3
-    - name: Setup Node
-      uses: pnpm/action-setup@v2.2.2
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18.17.0
+    - name: Install pnpm
+      uses: pnpm/action-setup@v2
+      id: pnpm-install
       with:
         version: 8.9.0
-        cache: ${{ steps.detect-package-manager.outputs.manager }}
+        run_install: false
     - name: Setup Pages
       uses: actions/configure-pages@v3
       with:
