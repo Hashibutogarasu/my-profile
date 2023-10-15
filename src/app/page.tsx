@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FadeUpCard, FadeUpDiv, FadeUpStagger } from '@/components/animation';
 import { CardIcon } from '@/components/link-card-icon';
 import { CardName } from '@/components/link-card-name';
@@ -22,10 +23,9 @@ import { SiMisskey } from 'react-icons/si';
 import MyAvatar from '../../public/icons/Karasu.png';
 import { Card } from '@/components/ui/card';
 import { ModalFooter } from '@nextui-org/react';
+import { useState } from 'react';
 
 export default function Page() {
-  const isProd = process.env.NODE_ENV === 'production';
-  const basepath = isProd ? 'my-prifile' : '';
   return (
     <main className='container space-y-6 py-6 lg:my-10'>
       <div>
@@ -114,15 +114,15 @@ export default function Page() {
                 <CardName name='GitHub' id='@Hashibutogarasu' />
               </div>
               <div className='grid grid-cols-4 gap-3'>
-                <Image width={32} height={32} src={`${basepath}/programLangs/JavaScript.svg`} alt='javascript' />
-                <Image width={32} height={32} src={`${basepath}/programLangs/TypeScript.svg`} alt='typescript' />
-                <Image width={32} height={32} style={{ backgroundColor: "white", borderRadius: "5px" }} src='/programLangs/java-icon.svg' alt='java' />
+                <img width={32} height={32} src={`./programLangs/JavaScript.svg`} alt='javascript' />
+                <img width={32} height={32} src={`./programLangs/TypeScript.svg`} alt='typescript' />
+                <img width={32} height={32} style={{ backgroundColor: "white", borderRadius: "5px" }} src='/programLangs/java-icon.svg' alt='java' />
               </div>
             </LinkCard>
             <FadeUpCard
               className='col-span-6 grid gap-3 p-6 transition-colors hover:border-green-600 md:col-span-3 lg:col-span-2'>
               <CardIcon>
-                <Image width={32} height={32} src={`${basepath}/icons/Minecraft_Launcher_MS_Icon.png`} alt='Minecraft Java Edition' />
+                <img width={32} height={32} src={`./icons/Minecraft_Launcher_MS_Icon.png`} alt='Minecraft Java Edition' />
               </CardIcon>
               <CardName name='Minecraft Java Edition' id='kara_su' />
             </FadeUpCard>
@@ -136,14 +136,14 @@ export default function Page() {
             <FadeUpCard
               className='col-span-6 grid gap-3 p-6 transition-colors hover:border-white md:col-span-3 lg:col-span-2'>
               <CardIcon>
-                <Image width={32} height={32} src={`${basepath}/icons/genshin_impact.png`} alt='Genshin Impact' />
+                <img width={32} height={32} src={`./icons/genshin_impact.png`} alt='Genshin Impact' />
               </CardIcon>
               <CardName name='Genshin Impact' id='806193489 Rank:59' />
             </FadeUpCard>
             <FadeUpCard
               className='col-span-6 grid gap-3 p-6 transition-colors hover:border-white md:col-span-3 lg:col-span-2'>
               <CardIcon>
-                <Image width={32} height={32} src={`${basepath}/icons/starrail.png`} alt='Honkai Starrail' />
+                <img width={32} height={32} src={`./icons/starrail.png`} alt='Honkai Starrail' />
               </CardIcon>
               <CardName name='Honkai Starrail' id='800498009 Rank:68' />
             </FadeUpCard>
