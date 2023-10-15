@@ -21,6 +21,7 @@ import { TbBrandMinecraft } from 'react-icons/tb';
 import { SiMisskey } from 'react-icons/si';
 import MyAvatar from '../../public/icons/Karasu.png';
 import { Card } from '@/components/ui/card';
+import { ModalFooter } from '@nextui-org/react';
 
 export default function Home() {
   return (
@@ -110,7 +111,7 @@ export default function Home() {
                 </CardIcon>
                 <CardName name='GitHub' id='@Hashibutogarasu' />
               </div>
-              <div className='grid grid-cols-3 gap-3'>
+              <div className='grid grid-cols-4 gap-3'>
                 <Image width={32} height={32} src='/programLangs/JavaScript.svg' alt='javascript' />
                 <Image width={32} height={32} src='/programLangs/TypeScript.svg' alt='typescript' />
                 <Image width={32} height={32} style={{ backgroundColor: "white", borderRadius: "5px" }} src='/programLangs/java-icon.svg' alt='java' />
@@ -147,7 +148,10 @@ export default function Home() {
           </div>
         </FadeUpStagger>
       </div>
-
+      <footer className='text-center'>
+        <p>{`Copyright (c) 2023 Hashibutogarasu`}</p>
+        <p>Powered by Next.js</p>
+      </footer>
     </main>
   );
 }
