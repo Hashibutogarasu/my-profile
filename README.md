@@ -1,3 +1,5 @@
+*nonick-mc/next.js-profile-app*からのフォーク
+
 [Next.js](https://nextjs.org)・[TailwindCSS](https://tailwindcss.com/)・[Shadcn/ui](https://ui.shadcn.com/)で構築された、シンプルなプロフィールページ。  
 **🔮サンプル → https://nonick-mc.com**
 
