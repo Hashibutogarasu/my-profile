@@ -2,9 +2,8 @@ const isProd = process.env.NODE_ENV === 'production';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = isProd ? {
+    basePath: process.env.GITHUB_ACTIONS ? "/githubpages.karasu256.com" : "",
     output: 'export',
-    assetPrefix: "/my-profile",
-    basePath: "/my-profile",
 } : {
     unoptimized: true,
 };
