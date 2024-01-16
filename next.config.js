@@ -1,5 +1,5 @@
 const isProd = process.env.NODE_ENV === 'production';
-const urlPrefix = '/my-profile';
+const urlPrefix = '/';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = isProd ? {
