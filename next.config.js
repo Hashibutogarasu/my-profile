@@ -1,8 +1,10 @@
 const isProd = process.env.NODE_ENV === 'production';
+const urlPrefix = '/my-profile';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = isProd ? {
-    basePath: process.env.GITHUB_ACTIONS ? "/githubpages.karasu256.com" : "",
+    assetPrefix: urlPrefix,
+    basePath: urlPrefix,
     output: 'export',
 } : {
     unoptimized: true,
